@@ -6,7 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : "No message";
 
     // Your email where you want to receive messages
-    $to = "your-email@example.com";
+    // $to = "Mr.rajrahul1804@gmail.com";
+    $to = "kashyapanuuuuu@gmail.com";
     $subject = "New Contact Form Submission";
 
     // Email Content

@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
 
-   <!-- Site Title -->
-   <title>Webdesignwesign - Web Agency HTML5 Template</title>
+    <!-- Site Title -->
+    <title>Webdesignwesign </title>
 
-   <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/logoblackmain.jpeg">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logoblackmain.jpeg">
 
 
     <!-- CSS here -->
@@ -123,13 +123,13 @@
                 <a class="light-img" href="index.html"><img src="assets/logoblackmain.jpeg" alt="logo"></a>
             </div>
             <div class="side-menu-wrap"></div>
-           
+
             <div class="side-menu-contact">
                 <ul class="side-menu-list">
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
                         <p>Mayur Vihar, Phase 1, 110092
-                           <br> Delhi, India </p>
+                            <br> Delhi, India </p>
                     </li>
                     <li>
                         <i class="fas fa-phone"></i>
@@ -152,7 +152,7 @@
     <!--/.sidebar-area-->
 
     <div id="preloader">
-        <div class="loading" data-loading-text="Runok"></div>
+        <div class="loading" data-loading-text="WDW"></div>
     </div>
     <!-- ./ preloader -->
 
@@ -203,7 +203,7 @@
                                         <div class="content">
                                             <h4 class="title">Phone Number</h4>
                                             <span><a href="tel:+65485965789">+91 8130768639</a></span>
-                                            <span><a href="mailto:hello@acadu.com">hello@acadu.com</a></span>
+                                            <span><a href="mailto:Mr.rajrahul1804@gmail.com">Mr.rajrahul1804@gmail.com</a></span>
                                         </div>
                                     </div>
                                     <div class="list-item">
@@ -224,14 +224,16 @@
                                 <div class="request-form">
                                     <style>
                                         /* CSS for Styling the Contact Form */
-                                       
+                                        
                                         .form-group {
                                             margin-bottom: 15px;
                                         }
+                                        
                                         .form-group label {
                                             display: block;
                                             margin-bottom: 5px;
                                         }
+                                        
                                         .form-control {
                                             width: 100%;
                                             padding: 8px;
@@ -241,11 +243,13 @@
                                             border-radius: 5px;
                                             box-sizing: border-box;
                                         }
+                                        
                                         .submit-btn {
                                             display: flex;
                                             justify-content: center;
                                             margin-top: 20px;
                                         }
+                                        
                                         .submit-btn button {
                                             background-color: #009688;
                                             color: #fff;
@@ -255,9 +259,11 @@
                                             border-radius: 5px;
                                             cursor: pointer;
                                         }
+                                        
                                         .submit-btn button:hover {
                                             background-color: #02b9a7;
                                         }
+                                        
                                         .success-message {
                                             color: #00967d;
                                             text-align: center;
@@ -288,19 +294,19 @@
                                     </form>
                                     <script>
                                         const form = document.getElementById("contactForm");
-                                        form.addEventListener("submit", function (e) {
+                                        form.addEventListener("submit", function(e) {
                                             e.preventDefault(); // Prevent default form submission
-                                            
+
                                             fetch("send_mail.php", {
-                                                method: "POST",
-                                                body: new FormData(form)
-                                            })
-                                            .then(response => response.text())
-                                            .then(data => {
-                                                document.getElementById("successMessage").style.display = "block";
-                                                form.reset();
-                                            })
-                                            .catch(error => console.error("Error:", error));
+                                                    method: "POST",
+                                                    body: new FormData(form)
+                                                })
+                                                .then(response => response.text())
+                                                .then(data => {
+                                                    document.getElementById("successMessage").style.display = "block";
+                                                    form.reset();
+                                                })
+                                                .catch(error => console.error("Error:", error));
                                         });
                                     </script>
                                 </div>
@@ -313,8 +319,12 @@
 
             <div class="map-wrapper pb-130">
                 <div class="container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3695180639447!2d77.2931839396681!3d28.610143364981813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4a2fb37e045%3A0x9f475f8963e7182c!2s11%2F3%2C%20near%20Dena%20Bank%2C%20Phase%201%2C%20Pocket%206%2C%20Shashi%20Garden%2C%20Mayur%20Vihar%2C%20Delhi%2C%20110091!5e0!3m2!1sen!2sin!4v1734439411537!5m2!1sen!2sin" width="1400" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.3695180639447!2d77.2931839396681!3d28.610143364981813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4a2fb37e045%3A0x9f475f8963e7182c!2s11%2F3%2C%20near%20Dena%20Bank%2C%20Phase%201%2C%20Pocket%206%2C%20Shashi%20Garden%2C%20Mayur%20Vihar%2C%20Delhi%2C%20110091!5e0!3m2!1sen!2sin!4v1734439411537!5m2!1sen!2sin"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
+
             <!-- ./ map-wrapper -->
 
             <footer class="footer-section bg-dark-1">
@@ -327,7 +337,7 @@
                                     <div class="footer-logo">
                                         <img class="logo-dark" src="assets/logoblackmain.jpeg" alt="Logo">
                                     </div>
-                                    
+
                                 </div>
                                 <h3> Webdesignwesign</h3>
                             </div>
@@ -363,7 +373,7 @@
                                     <h3 class="widget-title">AVAILABLITY</h3>
                                 </div>
                                 <p class="mb-20">We're dedicated to helping your business thrive and achieve success.</p>
-                               
+
                                 <h4 class="title">WE ARE AVAILABLE <span>Mon-Sat: 09.00 am to 6.30 pm</span></h4>
                             </div>
                         </div>
@@ -389,7 +399,7 @@
                                     <li class="twitter">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                     </li>
-                                   
+
                                 </ul>
                             </div>
                         </div>

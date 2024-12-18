@@ -1,9 +1,9 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Runok - Web Agency HTML5 Template
+    Template Name: Runok  
     Author: RRDevs
     Support: rubelmah55@gmail.com
-    Description: Runok - Web Agency HTML5 Template
+    Description: Runok  
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -540,7 +540,7 @@ ul {
 
 .section-heading .sub-heading:after,
 .section-heading .sub-heading:before {
-    background: linear-gradient(270deg,#288e80, transparent 100%);
+    background: linear-gradient(270deg, #288e80, transparent 100%);
     content: "";
     width: 37px;
     height: 10px;
@@ -557,7 +557,7 @@ ul {
 }
 
 .section-heading .sub-heading:after {
-    background: linear-gradient(270deg,#288e80, transparent 100%);
+    background: linear-gradient(270deg, #288e80, transparent 100%);
     left: auto;
     right: 10px;
 }

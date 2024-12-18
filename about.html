@@ -156,7 +156,47 @@
     <div id="preloader">
         <div class="loading" data-loading-text="WDW"></div>
     </div>
-    <!-- ./ preloader -->
+    <div class="chat-container">
+        <div class="chat-text">
+            Need Help? <strong>Chat with us</strong>
+        </div>
+        <a href="https://wa.me/8383934537" target="_blank" class="chat-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+    </div>
+    <style>
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            padding: 10px 15px;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+        
+        .chat-text {
+            color: #333333;
+            margin-right: 10px;
+        }
+        /* WhatsApp Icon Button */
+        
+        .chat-button img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .chat-button img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 
     <div id="smooth-wrapper">
         <div id="smooth-content">

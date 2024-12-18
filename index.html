@@ -556,56 +556,77 @@
 
             <!-- ./ pricing-section -->
 
-            <section class="appointment-section pb-130">
-                <div class="container">
-                    <div class="row appointment-wrap align-items-center">
-                        <div class="col-lg-5">
-                            <div class="appointment-img reveal">
-                                <img src="assets/img/images/apppoint-img.jpg" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="appointment-content">
-                                <div class="section-heading heading-3">
-                                    <h4 class="sub-heading after-none" data-text-animation="fade-in" data-duration="1.5">
-                                        Make An Appointment
-                                    </h4>
-                                    <h2 class="section-title" data-text-animation data-split="word" data-duration="1">
-                                        Let’s Start A Discussion About Your Next Projects
-                                    </h2>
+           <section class="appointment-section pb-130">
+    <div class="container">
+        <div class="row appointment-wrap align-items-center">
+            <div class="col-lg-5">
+                <div class="appointment-img reveal">
+                    <img src="assets/img/images/apppoint-img.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="appointment-content">
+                    <div class="section-heading heading-3">
+                        <h4 class="sub-heading after-none" data-text-animation="fade-in" data-duration="1.5">
+                            Make An Appointment
+                        </h4>
+                        <h2 class="section-title" data-text-animation data-split="word" data-duration="1">
+                            Let’s Start A Discussion About Your Next Projects
+                        </h2>
+                    </div>
+                    <div class="appointment-form fade-wrapper">
+                        <form action="send-mail-home.php" method="post" id="ajax_contact" class="form-horizontal">
+                            <div class="form-group row fade-top">
+                                <div class="col-md-6">
+                                    <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Your Name*" required>
                                 </div>
-                                <div class="appointment-form fade-wrapper">
-                                    <form action="send-mail-home.php" method="post" id="ajax_contact" class="form-horizontal">
-                                        <div class="form-group row fade-top">
-                                            <div class="col-md-6">
-                                                <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Your Name*" required>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number*" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row fade-top">
-                                            <div class="col-md-12">
-                                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email (Optional)">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row fade-top">
-                                            <div class="col-md-12">
-                                                <textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Your Message*" required></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="submit-btn fade-top">
-                                            <button id="submit" class="rr-primary-btn" type="submit">
-                                                Submit <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                                            </button>
-                                        </div>
-                                    </form>
+                                <div class="col-md-6">
+                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number*" required>
                                 </div>
                             </div>
+                            <div class="form-group row fade-top">
+                                <div class="col-md-12">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email (Optional)">
+                                </div>
+                            </div>
+                            <div class="form-group row fade-top">
+                                <div class="col-md-12">
+                                    <textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Your Message*" required></textarea>
+                                </div>
+                            </div>
+                            <div class="submit-btn fade-top">
+                                <button id="submit" class="rr-primary-btn" type="submit">
+                                    Submit <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <!-- Success Message -->
+                        <div id="success-message" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+                            <p>Thank you for sharing your details! We will connect with you soon.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('ajax_contact').addEventListener('submit', function (e) {
+        // Prevent default form submission for testing
+        e.preventDefault();
+        
+        // Show the success message
+        const successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+        
+        // Hide the message after 2.5 seconds
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 2500);
+    });
+</script>
+
 
             <!-- ./ appointment-section -->
 
